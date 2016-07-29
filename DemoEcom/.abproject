@@ -1,0 +1,45 @@
+{
+  "ProjectName": "DemoEcom",
+  "ProjectGuid": "c4dc628e-a07e-4fc2-8f3c-7ab4063ba0ca",
+  "projectVersion": 1,
+  "AppIdentifier": "com.telerik.DemoEcom",
+  "DisplayName": "DemoEcom",
+  "Author": "",
+  "Description": "DemoEcom",
+  "BundleVersion": "1.0",
+  "AndroidVersionCode": "1",
+  "iOSDeviceFamily": [
+    "1",
+    "2"
+  ],
+  "iOSBackgroundMode": [],
+  "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
+  "FrameworkVersion": "4.0.0",
+  "AndroidPermissions": [
+    "android.permission.INTERNET"
+  ],
+  "DeviceOrientations": [
+    "Portrait",
+    "Landscape"
+  ],
+  "AndroidHardwareAcceleration": "true",
+  "iOSStatusBarStyle": "Default",
+  "Framework": "Cordova",
+  "WP8TileTitle": "",
+  "WP8Publisher": "",
+  "WP8Capabilities": [
+    "ID_CAP_NETWORKING",
+    "ID_CAP_WEBBROWSERCOMPONENT"
+  ],
+  "WP8Requirements": [],
+  "WP8PublisherID": "{a9b8fe43-4080-493e-a943-a23da44cbef6}",
+  "WP8ProductID": "{7c9fac08-bd86-4e9d-8fae-2e7565c8aec1}",
+  "WPSdk": "8.0",
+  "WP8PackageIdentityName": "1234Telerik.DemoEcom",
+  "WP8WindowsPublisherName": "CN=Telerik",
+  "WP8SupportedResolutions": [
+    "ID_RESOLUTION_WVGA",
+    "ID_RESOLUTION_WXGA",
+    "ID_RESOLUTION_HD720P"
+  ]
+}
