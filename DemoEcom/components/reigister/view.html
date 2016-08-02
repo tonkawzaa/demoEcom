@@ -1,7 +1,62 @@
 <div data-role="view" data-title="Home View" data-layout="main" data-model="app.reigisterView" data-show="app.reigisterView.onShow" data-after-show="app.reigisterView.afterShow">
-          <span class="h2 center" >
+          <span class="h2 center home" >
             Reigister
           </span>
-    
+    <div id="signup1_form" data-role="validator" novalidate="novalidate">
+            <form>
+                <table>
+                   <tr>
+                       <td>
+                            <p>
+                                Name
+                            </p>
+                        </td>
+                       <td>
+                          <input id="signupfirstname" name="signupfirstname" class="form_reg" data-bind="value: reigisterViewModel.fields.name"  type="text" placeholder="Name" required validationMessage="***">
+                         <span class="k-invalid-msg" data-for="signupfirstname"></span>
+                       </td>
+                   </tr>
+                   <tr>
+                       <td>
+                            <p>
+                                E-Mail
+                            </p>
+                        </td>
+                       <td>
+                          <input id="signupemail" name="signupemail"  class="form_reg" data-bind="value: reigisterViewModel.fields.email" required validationMessage="***" placeholder="E-mail" type="email">
+                           <span class="k-invalid-msg" data-for="signupemail"></span>
+                       </td>
+                   </tr>
+                   <tr>
+                       <td>
+                            <p>
+                                Password
+                            </p>
+                        </td>
+                       <td>
+                          <input id="signuppassword1" name="signuppassword1"  class="form_reg" data-bind="value: reigisterViewModel.fields.password" required validationMessage="***" placeholder="Password" type="password">
+                          <span class="k-invalid-msg" data-for="signuppassword1"></span>
+                       </td>
+                   </tr>
+                   <tr>
+                       <td>
+                            <p>
+                                Re-Password
+                            </p>
+                        </td>
+                       <td>
+                          <input id="signupconfirmpassword" name="signupconfirmpassword"  class="form_reg" data-bind="value: reigisterViewModel.fields.password_confirmation" required validationMessage="***" placeholder="Re-Password" type="password">
+                          <span class="k-invalid-msg" data-for="signupconfirmpassword"></span>
+                       </td>
+                   </tr>
+                  
+                </table>
+                </form>
+                <div class="button-group bottom_position">
+                <a class="primary" data-role="button" data-bind="events: { click: reigisterViewModel.submit }" >Submit</a>
+                <a  class="primary2"data-role="button" data-bind="events: { click: reigisterViewModel.gohome }"  >Cancel</a>
+               </div>
+            
+         </div>
 
 </div>

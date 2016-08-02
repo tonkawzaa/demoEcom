@@ -1,5 +1,9 @@
 'use strict';
 
+var client_id = "xernamic_mobile";
+var client_secret = "1q2w3e4r5t!";
+var server_location = "http://accounts.xernamic.com";
+
 (function() {
     var app = {
         data: {}
@@ -7,9 +11,19 @@
 
     var bootstrap = function() {
         $(function() {
+            var access_token,page_start;
+            access_token = null;
+        	access_token = localStorage.getItem("access_token");
+            
+            if(access_token != null){
+            	page_start = 'components/contactsView/view.html';
+            }else{
+               	page_start = 'components/homeView/view.html';
+            };
+            
             app.mobileApp = new kendo.mobile.Application(document.body, {
                 skin: 'nova',
-                initial: 'components/homeView/view.html'
+                initial: page_start
             });
         });
     };
