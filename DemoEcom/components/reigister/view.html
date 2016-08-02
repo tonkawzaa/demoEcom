@@ -1,5 +1,5 @@
 <div data-role="view" data-title="Home View" data-layout="main" data-model="app.reigisterView" data-show="app.reigisterView.onShow" data-after-show="app.reigisterView.afterShow">
-          <span class="h2 center home" >
+          <span class="h2 center reigister" >
             Reigister
           </span>
     <div id="signup1_form" data-role="validator" novalidate="novalidate">
@@ -51,11 +51,15 @@
                    </tr>
                   
                 </table>
-                </form>
-                <div class="button-group bottom_position">
+            </form>
+               <div class="button-group" >
                 <a class="primary" data-role="button" data-bind="events: { click: reigisterViewModel.submit }" >Submit</a>
+               </div>
+               <div class="button-group ">
                 <a  class="primary2"data-role="button" data-bind="events: { click: reigisterViewModel.gohome }"  >Cancel</a>
                </div>
+              
+                   
             
          </div>
 

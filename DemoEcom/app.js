@@ -22,6 +22,7 @@ var server_location = "http://accounts.xernamic.com";
             };
             
             app.mobileApp = new kendo.mobile.Application(document.body, {
+                transition: "fade",
                 skin: 'nova',
                 initial: page_start
             });

@@ -14,16 +14,17 @@ app.reigisterView = kendo.observable({
     var access_token= null ;
     var reigisterViewModel = kendo.observable({
         fields: {
-            /*
+            
             name : '',
             email : '',
             password : '',
             password_confirmation : '',
-            */
+            /*
             name : 'top',
             email : 'top@gmail.com',
             password : '123456',
             password_confirmation : '123456',
+            */
         },
         submit: function(e) {
             var validator = $("#signup1_form").data("kendoValidator");

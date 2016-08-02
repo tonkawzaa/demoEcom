@@ -462,6 +462,10 @@
 
 /* END_CUSTOM_CODE_kendoUiMobileApp */
 
+#kendoUiMobileApp .button-group, #kendoUiMobileApp .icon-group {
+    border-spacing: 1em .4em;
+}
+
 
 .div100{
     height:455px;
@@ -478,13 +482,17 @@
 .home{
         padding-top: 130px;
 }
+.reigister
+{
+        padding-top: 100px;
+}
 .from_center{
     width: 75%;
     margin:0em auto 0em auto;
  
 }
 .scrollertermsofuse{
-    height: 295px;
+    height: 280px;
     width:90%;
     margin:0px 15px;
 }
