@@ -461,3 +461,67 @@
 
 
 /* END_CUSTOM_CODE_kendoUiMobileApp */
+
+
+.div100{
+    height:455px;
+    width: 100%; 
+}
+.center{
+    text-align: center;
+    margin:0em auto 0em auto;
+    display:block;
+}
+.tdwidth{
+    width:100%;
+}
+.home{
+        padding-top: 130px;
+}
+.from_center{
+    width: 75%;
+    margin:0em auto 0em auto;
+ 
+}
+.scrollertermsofuse{
+    height: 295px;
+    width:90%;
+    margin:0px 15px;
+}
+.h2{
+    font-weight: bold;
+    font-size: 1.7em;  
+}
+
+/*  320x533 andriod Phone  */
+@media(max-width:359px)and (min-height: 480px) {
+    
+}
+
+/*  320x568  iphone5  */
+@media(max-width:350px)and (min-height: 533px) {
+}
+
+/*  360x640		Galaxy S3 S4 S5 S6  ,Galaxy Note II  ,Xperia Z */
+@media(min-width:351px) {
+}
+
+/********  375x667		//iphone6  ********/
+@media(min-width:365px) {
+}
+
+/***************   414x736		//iphone6 Plus   ******/
+@media(min-width:404px) {
+}
+
+/***************   600x960		//LG	G Pad 8.3   ******/
+@media(min-width:590px) {
+}
+
+/***************   600x1024 	//andriod tablet   ******/
+@media(min-width:590px)  and (min-height: 970px)  {
+}
+
+/***************   768x1024	//ipad   ******/
+@media(min-width:750px)  and (max-height: 1024px)  {
+}

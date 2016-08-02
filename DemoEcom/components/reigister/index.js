@@ -1,6 +1,6 @@
 'use strict';
 
-app.homeView = kendo.observable({
+app.reigisterView = kendo.observable({
     onShow: function() {},
     afterShow: function() {}
 });
@@ -8,15 +8,12 @@ app.homeView = kendo.observable({
 // START_CUSTOM_CODE_homeView
 // Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes
 (function () {
-    app.homeView.set('title', 'Odoo Mobile Commerce');
+    app.reigisterView.set('title', 'reigister');
 })();
 (function (parent) {
-    var homeViewModel = kendo.observable({
-        
-        gotermofuse: function() {
-                app.mobileApp.navigate('components/termsofuse/view.html');
-        },
+    var reigisterViewModel = kendo.observable({
+
     });
-    parent.set('homeViewModel', homeViewModel);
-})(app.homeView)
+    parent.set('reigisterViewModel', reigisterViewModel);
+})(app.reigisterView)
 // END_CUSTOM_CODE_homeView
