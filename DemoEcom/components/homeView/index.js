@@ -32,12 +32,12 @@ app.homeView = kendo.observable({
                // navigator.notification.alert(reigisterViewModel.fields);
                 $.ajax({
                         type: "POST",
-                        url: server_location+"/api/internal/login",
+                        url: server_location+"/api/login",
                         contentType: "application/json",
                         data: JSON.stringify({ 
                                                 client_id:client_id,
                                                 client_secret:client_secret,
-                                                email:homeViewModel.fields.email,
+                                                login:homeViewModel.fields.email,
                                                 password:homeViewModel.fields.password,
                                              }),
                         success: function(result) {
@@ -51,7 +51,7 @@ app.homeView = kendo.observable({
                                 localStorage.setItem("access_token",access_token);
 
                                 //navigator.notification.alert(access_token);
-                                app.mobileApp.navigate('components/contactsView/view.html');
+                                app.mobileApp.navigate('components/listproductView/view.html');
                                 
                                 
                             }else if(result.error)

@@ -466,6 +466,20 @@
     border-spacing: 1em .4em;
 }
 
+#headerlistProduct{
+    width:100%;
+    display:relative;
+}
+#Drawer_burnPoint{
+    width:30%    
+}
+.reddra{
+        background: #A163A2 !important;
+}
+.img-fix{
+    width:150px;
+    height:150px;
+}
 
 .div100{
     height:455px;

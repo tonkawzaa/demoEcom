@@ -1,0 +1,21 @@
+<div data-role="view" data-title="Product" data-layout="main" data-model="app.listproductView" data-show="app.listproductView.onShow" data-after-show="app.listproductView.afterShow">
+        <header data-role="header" >
+            <div data-role="navbar" class="reddra" >
+                <span data-role="view-title"></span>  
+                <a data-role="button" href="#appDrawer" data-rel="drawer" data-align="left" data-icon="drawer-button"></a>
+                <a data-role="button"data-align="right" data-icon="search" data-navigate-on-press="true"></a>
+            </div>
+        </header>
+   
+    <div id = "Test">
+        <ul id="productlist" class="grid bgcolor"></ul>
+               
+            <script id="productlisttmp" type="text/x-kendo-template">
+                <p>#:name# <br> #:merchant_client_name#</p>
+                   <img class="grid_img" src="#: image_url #"/>
+                <p>#:list_price#</p>
+            </script>
+    </div>
+
+    
+</div>

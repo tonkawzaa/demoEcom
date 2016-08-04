@@ -16,7 +16,7 @@ var server_location = "http://accounts.xernamic.com";
         	access_token = localStorage.getItem("access_token");
             
             if(access_token != null){
-            	page_start = 'components/contactsView/view.html';
+            	page_start = 'components/listproductView/view.html';
             }else{
                	page_start = 'components/homeView/view.html';
             };

@@ -34,15 +34,15 @@ app.reigisterView = kendo.observable({
                // navigator.notification.alert(reigisterViewModel.fields);
                 $.ajax({
                         type: "POST",
-                        url: server_location+"/api/internal/signup",
+                        url: server_location+"/api/signup",
                         contentType: "application/json",
                         data: JSON.stringify({ 
                                                 client_id:client_id,
                                                 client_secret:client_secret,
                                                 name: reigisterViewModel.fields.name,
-                                                email:reigisterViewModel.fields.email,
+                                                login:reigisterViewModel.fields.email,
                                                 password:reigisterViewModel.fields.password,
-                                                password_confirmation:reigisterViewModel.fields.password_confirmation,
+                                                confirm_password:reigisterViewModel.fields.password_confirmation,
                                              }),
                         success: function(result) {
                             //navigator.notification.alert(result);
@@ -55,7 +55,7 @@ app.reigisterView = kendo.observable({
                                 localStorage.setItem("access_token",access_token);
 
                                 //navigator.notification.alert(access_token);
-                                app.mobileApp.navigate('components/contactsView/view.html');
+                                app.mobileApp.navigate('components/listproductView/view.html');
                                 
                                 
                             }else if(result.error)
