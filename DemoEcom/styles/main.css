@@ -514,6 +514,12 @@
     font-weight: bold;
     font-size: 1.7em;  
 }
+.iconcart{
+    width: 1.5em;
+    height: auto;
+    margin-right : 1em;
+    
+}
 
 /*  320x533 andriod Phone  */
 @media(max-width:359px)and (min-height: 480px) {

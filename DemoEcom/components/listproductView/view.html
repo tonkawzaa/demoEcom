@@ -2,8 +2,9 @@
         <header data-role="header" >
             <div data-role="navbar" class="reddra" >
                 <span data-role="view-title"></span>  
-                <a data-role="button" href="#appDrawer" data-rel="drawer" data-align="left" data-icon="drawer-button"></a>
-                <a data-role="button"data-align="right" data-icon="search" data-navigate-on-press="true"></a>
+                <a data-role="button" href="components/menuView/view.html"  data-align="left" data-icon="drawer-button"></a>
+                <a data-role="button"data-align="right" data-click="showSearch" data-click-on="down" data-icon="search" data-navigate-on-press="true"></a>
+                <img data-align="right" src= "images/shopping-cart.png" class="iconcart"/>
             </div>
         </header>
    
@@ -11,9 +12,11 @@
         <ul id="productlist" class="grid bgcolor"></ul>
                
             <script id="productlisttmp" type="text/x-kendo-template">
-                <p>#:name# <br> #:merchant_client_name#</p>
+                
                    <img class="grid_img" src="#: image_url #"/>
-                <p>#:list_price#</p>
+                <p class="center"><h1> #:name#  </h1><br> 
+                 Merchant : #:merchant_client_name#</p>
+                <p> price : #:list_price# ฿</p>
             </script>
     </div>
 
