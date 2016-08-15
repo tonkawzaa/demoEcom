@@ -3,6 +3,14 @@
 var client_id = "xernamic_mobile";
 var client_secret = "1q2w3e4r5t!";
 var server_location = "http://accounts.xernamic.com";
+var merchant_client_id;
+//localStorage.removeItem("cart");
+var cart=[] ;
+var order=[];
+localStorage.setItem("cart",JSON.stringify(cart));
+//// for DEV //////
+merchant_client_id ="odoo_merchant_1";
+//////////
 
 (function() {
     var app = {
@@ -15,11 +23,11 @@ var server_location = "http://accounts.xernamic.com";
             access_token = null;
         	access_token = localStorage.getItem("access_token");
             
-            if(access_token != null){
-            	page_start = 'components/listproductView/view.html';
+            if(access_token !== null){
+            	page_start = 'components/categoriesView/view.html';
             }else{
                	page_start = 'components/homeView/view.html';
-            };
+            }
             
             app.mobileApp = new kendo.mobile.Application(document.body, {
                 transition: "slide",

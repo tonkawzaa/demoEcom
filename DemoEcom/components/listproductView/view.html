@@ -2,23 +2,27 @@
         <header data-role="header" >
             <div data-role="navbar" class="reddra" >
                 <span data-role="view-title"></span>  
+                <a data-role="backbutton"data-align="left"></a>
                 <a data-role="button" href="components/menuView/view.html"  data-align="left" data-icon="drawer-button"></a>
                 <a data-role="button"data-align="right" data-click="showSearch" data-click-on="down" data-icon="search" data-navigate-on-press="true"></a>
-                <img data-align="right" src= "images/shopping-cart.png" class="iconcart"/>
+                <!-- <img data-align="right" src= "images/shopping-cart.png" class="iconcart"/>  -->
+                <a data-role="button" href="components/cartView/view.html" data-align="right"  data-icon="cart" ></a>
             </div>
         </header>
-   
-    <div id = "Test">
+    
+    <div id = "divproductlist">
         <ul id="productlist" class="grid bgcolor"></ul>
-               
-            <script id="productlisttmp" type="text/x-kendo-template">
-                
-                   <img class="grid_img" src="#: image_url #"/>
-                <p class="center"><h1> #:name#  </h1><br> 
-                 Merchant : #:merchant_client_name#</p>
-                <p> price : #:list_price# ฿</p>
-            </script>
     </div>
 
     
 </div>
+
+<script id="productlisttmp" type="text/x-kendo-template">
+            <a href="\\#components/detailsproductView/view.html?image=#: image#&id=#: id #&name=#:name#&price=#:price#">
+                <img class="grid_img" src="#: image #"/>
+                <p class="center">
+                    <h1> #:name#  </h1><br> 
+                     price : #:price# ฿
+                </p>
+           </a>
+</script>

@@ -1,0 +1,21 @@
+<div data-role="view" data-title="categoriesView" data-layout="main" data-model="app.categoriesView" data-show="app.categoriesView.onShow" data-after-show="app.categoriesView.afterShow">
+    <header data-role="header" >
+            <div data-role="navbar" class="reddra" >
+                <span data-role="view-title"></span>  
+                <a data-role="button" href="components/menuView/view.html"  data-align="left" data-icon="drawer-button"></a>
+                <a data-role="button"data-align="right" data-click="showSearch" data-click-on="down" data-icon="search" data-navigate-on-press="true"></a>
+                <a data-role="button" href="components/cartView/view.html" data-align="right"  data-icon="cart" ></a>
+            </div>
+    </header>
+    
+    <div id = "divcategorieslist">
+        <ul id="categorieslist" class="grid bgcolor"></ul>
+               
+            <script id="categorieslisttmp" type="text/x-kendo-template"> 
+                <a href="\\#components/listproductView/view.html?id=#: id #">
+                    <img class="grid_img" src="#: image #"/>
+                    <p class="center"><h1> #:name#  </h1><br> 
+                </a>
+            </script>
+    </div>
+</div>

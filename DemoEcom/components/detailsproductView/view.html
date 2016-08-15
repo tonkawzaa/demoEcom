@@ -1,0 +1,18 @@
+<div data-role="view" data-title="detailsproduct" data-layout="main" data-model="app.detailsproductView" data-show="app.detailsproductView.onShow" data-after-show="app.detailsproductView.afterShow">
+        <header data-role="header" >
+            <div data-role="navbar" class="reddra" >
+                <span data-role="view-title"></span>  
+                <a data-role="backbutton"data-align="left"></a>
+                <a data-role="button" href="components/menuView/view.html"  data-align="left" data-icon="drawer-button"></a>
+                <a data-role="button" href="components/cartView/view.html" data-align="right"  data-icon="cart" ></a>
+            </div>
+        </header>
+    
+    <div id="Confirmfunc">
+        <img data-bind="attr: { src: data1_image }" /><br>
+        <span   data-bind="text: data1_name"></span><br>
+        <span   data-bind="text: data1_price"></span>฿<br>
+        <a data-role="backbutton" data-bind="events: { click: Confirm }"> Order </a>
+        <a data-role="backbutton" > Cancle </a>
+    </div>
+</div>
