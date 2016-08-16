@@ -8,6 +8,7 @@ var merchant_client_id;
 var cart=[] ;
 var order=[];
 localStorage.setItem("cart",JSON.stringify(cart));
+localStorage.setItem("order",JSON.stringify(order));
 //// for DEV //////
 merchant_client_id ="odoo_merchant_1";
 //////////
