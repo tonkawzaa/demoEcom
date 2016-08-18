@@ -523,16 +523,35 @@
 
 /*  320x533 andriod Phone  */
 @media(max-width:359px)and (min-height: 480px) {
+    .home{
+        padding-top: 160px;
+    }
+    .scrollertermsofuse{
+        height: 335px;
+    }
     
 }
 
 /*  320x568  iphone5  */
 @media(max-width:350px)and (min-height: 533px) {
+    .home{
+        padding-top: 180px;
+    }
+    .scrollertermsofuse{
+        height: 345px;
+    }
 }
 
 /*  360x640		Galaxy S3 S4 S5 S6  ,Galaxy Note II  ,Xperia Z */
 @media(min-width:351px) {
+    .home{
+        padding-top: 210px;
+    }
+    .scrollertermsofuse{
+        height: 470px;
+    }
 }
+
 
 /********  375x667		//iphone6  ********/
 @media(min-width:365px) {
@@ -540,10 +559,22 @@
 
 /***************   414x736		//iphone6 Plus   ******/
 @media(min-width:404px) {
+    .home{
+        padding-top: 230px;
+    }
+    .scrollertermsofuse{
+        height: 520px;
+    }
 }
 
 /***************   600x960		//LG	G Pad 8.3   ******/
 @media(min-width:590px) {
+    .home{
+        padding-top: 300px;
+    }
+     .scrollertermsofuse{
+        height: 650px;
+    }
 }
 
 /***************   600x1024 	//andriod tablet   ******/

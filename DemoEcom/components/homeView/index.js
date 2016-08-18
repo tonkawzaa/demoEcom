@@ -51,8 +51,8 @@ app.homeView = kendo.observable({
                                 localStorage.setItem("access_token",access_token);
 
                                 //navigator.notification.alert(access_token);
-                                app.mobileApp.navigate('components/categoriesView/view.html');
-                                //app.mobileApp.navigate('components/checkinView/view.html');
+                                //app.mobileApp.navigate('components/categoriesView/view.html');
+                                app.mobileApp.navigate('components/checkinView/view.html');
                                 
                                 
                             }else if(result.error)

@@ -26,6 +26,7 @@ merchant_client_id ="odoo_merchant_1";
             
             if(access_token !== null){
             	page_start = 'components/categoriesView/view.html';
+                //page_start = 'components/checkinView/view.html';
             }else{
                	page_start = 'components/homeView/view.html';
             }
@@ -45,7 +46,7 @@ merchant_client_id ="odoo_merchant_1";
             }
 
             var element = document.getElementById('appDrawer');
-            if (typeof(element) != 'undefined' && element !== null) {
+            if (typeof(element) !== 'undefined' && element !== null) {
                 if (window.navigator.msPointerEnabled) {
                     $('#navigation-container').on('MSPointerDown', 'a', function(event) {
                         app.keepActiveState($(this));

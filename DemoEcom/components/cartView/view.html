@@ -10,12 +10,14 @@
 <!--
     <ul id = "cartlist" ></ul>
  -->
-    <div data-role="footer" class="reddra">
+    <div id="data2Content" data-role="footer" class="reddra">
+        <div>
+            <h1 id="total" data-bind="text: total "></h1>
+        </div>
          <div class="button-group" >
                     <a class="primary" data-role="button"   data-bind="events: { click: cartViewModel.SendOrder }">Send Order</a>
          </div>
     </div>
-
 
 </div>
 

@@ -11,11 +11,31 @@ app.cartView = kendo.observable({
                                     });
         */
         app.cartView.set('cartdata', cart);
+        var text = 0;
+            for (var i in cart) {
+                text = text + parseFloat(cart[i].price);
+            }
+        var detailsgifts = {total:text};
+        kendo.bind($('#data2Content'),detailsgifts);
     },
     afterShow: function() {}
 });
 (function (parent) {
     var cartViewModel = kendo.observable({
+        
+        showTotal :function() {
+            var text = "";
+            for (var i in cart) {
+                text = text + cart[i].name;
+            }
+
+
+            /*
+                var Total = cart[0].price;
+                return kendo.toString(Total,"c")
+            */
+            return kendo.toString(text);
+        },
         
         SendOrder: function() {
            // navigator.notification.alert("SendOrder");

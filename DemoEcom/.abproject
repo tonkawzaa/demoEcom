@@ -16,11 +16,11 @@
   "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
   "FrameworkVersion": "4.0.0",
   "AndroidPermissions": [
+    "android.permission.CAMERA",
     "android.permission.INTERNET"
   ],
   "DeviceOrientations": [
-    "Portrait",
-    "Landscape"
+    "Portrait"
   ],
   "AndroidHardwareAcceleration": "true",
   "iOSStatusBarStyle": "Default",
@@ -42,8 +42,5 @@
     "ID_RESOLUTION_WXGA",
     "ID_RESOLUTION_HD720P"
   ],
-  "iOSDeploymentTarget": "6.0",
-  "CorePlugins": [
-    "com.phonegap.plugins.barcodescanner@5.0.1"
-  ]
+  "iOSDeploymentTarget": "6.0"
 }

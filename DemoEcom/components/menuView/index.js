@@ -18,7 +18,7 @@ app.MenuView = kendo.observable({
     var MenuViewModel = kendo.observable({
        
         logout: function() {
-            localStorage.removeItem("token");
+            localStorage.removeItem("access_token");
             cart=[] ;
             order=[];
             localStorage.setItem("cart",JSON.stringify(cart));
