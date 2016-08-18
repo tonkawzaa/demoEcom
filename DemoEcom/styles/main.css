@@ -461,6 +461,51 @@
 
 
 /* END_CUSTOM_CODE_kendoUiMobileApp */
+@font-face {
+   font-family: 'ROBOTO';
+      src: url('ROBOTO-REGULAR.ttf') format('truetype');
+
+   font-weight: normal;
+   font-style: normal;
+}
+@font-face {
+   font-family: 'ROBOTO';
+      src: url('ROBOTO-BOLD.ttf') format('truetype');
+
+   font-weight: bold;
+   font-style: normal;
+}
+p {
+   font-family: 'ROBOTO', arial, sans-serif;
+   font-weight: normal;
+   font-style: normal;
+    letter-spacing: 2px;
+    
+}
+text {
+   font-family: 'ROBOTO', arial, sans-serif;
+   font-weight: normal;
+   font-style: normal;
+    
+}
+span {
+   font-family: 'ROBOTO', arial, sans-serif;
+   font-weight: normal;
+   font-style: normal;
+    letter-spacing: 2px;
+}
+span{
+    font-size: 10px;
+}
+.spanbutton{
+    font-size: 1em;
+}
+p{
+    font-size: 10px;
+}
+.justify{
+    text-align: justify;
+}
 
 #kendoUiMobileApp .button-group, #kendoUiMobileApp .icon-group {
     border-spacing: 1em .4em;
@@ -473,6 +518,48 @@
 #Drawer_burnPoint{
     width:30%    
 }
+input{
+     border:0px;
+     width:80%;
+    background-color : #f1f1f1;
+}
+.logo{
+    margin: 2em auto 2em auto;
+    display: block;
+    width: 38%;
+    height: auto;
+}
+.checkin_logo{
+    margin: 2em auto 0 auto;
+    display: block;
+    width: 38%;
+    height: auto;
+}
+.checkintxt{
+    margin: 14px auto 2em auto;
+    display: block;
+    width: 38%;
+    height: auto;
+}
+.reg_logo{
+    margin: 14px auto;
+    display: block;
+    width: 32%;
+    height: auto;
+}
+.icon_in_from{
+    width: 2em;
+    height: auto;
+}
+.txtyellow{
+    color : #fed501;
+}
+.txtwhite{
+    color : #f2f2f2;
+}
+.bgcolor{
+    background-color: #f2f2f2;
+}
 .reddra{
         background: #A163A2 !important;
 }
@@ -481,10 +568,6 @@
     height:150px;
 }
 
-.div100{
-    height:455px;
-    width: 100%; 
-}
 .center{
     text-align: center;
     margin:0em auto 0em auto;
@@ -492,6 +575,11 @@
 }
 .tdwidth{
     width:100%;
+}
+.from_table_signin_child{
+    width: 90%;
+    margin:0.5em auto 0em auto;
+    display:block;
 }
 .home{
         padding-top: 130px;
@@ -506,19 +594,54 @@
  
 }
 .scrollertermsofuse{
-    height: 280px;
-    width:90%;
-    margin:0px 15px;
+    height: 285px;
+    width:100%;
+    margin:15px 0px;
 }
 .h2{
-    font-weight: bold;
-    font-size: 1.7em;  
+    font-size: 1.2em;  
 }
 .iconcart{
-    width: 1.5em;
+    width: 4em;
     height: auto;
     margin-right : 1em;
     
+}
+.right{
+    text-align: right;
+    float:right ;
+}
+.pic_bg_bottom{
+    width:100%;
+     height: 202px;
+}
+.background_image_main_bottom{
+    
+    background-image: url('../images/pic-bg.png');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: #202b3d;
+}
+.main_bottom_hight{
+    height: 73px;
+}
+.checkin_bottom_hight{
+    height: 168px;
+}
+.magin_buton{
+    margin-top: 2px;
+}
+.gap_bottom_hight{
+    height: 20px;
+}
+.spaceTermOfUse{
+    margin-top: 20px;
+}
+.magintermsofuse{
+    margin-bottom: 8px;
+}
+.maginregister{
+    margin-top: 7px;
 }
 
 /*  320x533 andriod Phone  */

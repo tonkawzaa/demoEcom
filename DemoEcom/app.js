@@ -33,7 +33,8 @@ merchant_client_id ="odoo_merchant_1";
             
             app.mobileApp = new kendo.mobile.Application(document.body, {
                 transition: "slide",
-                skin: 'nova',
+                //skin: 'nova',
+                skin: 'flat',
                 initial: page_start
             });
         });

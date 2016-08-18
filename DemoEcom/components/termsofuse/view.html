@@ -1,16 +1,9 @@
 <div data-role="view" data-title="Terms Of Use" data-layout="main" data-model="app.termsofuseView" data-show="app.termsofuseView.onShow" data-after-show="app.termsofuseView.afterShow">
-      <div id="termsofuseModel" class="divmain">
-        <table></table>
-        <br>
-        <span class="h2 center" >
-            Term Of Use
+     
+        <span class="h2 center txtwhite spaceTermOfUse" >
+            <b>Term Of Use </b>
         </span>
-        <br>
-        <div data-role="scroller" class="bgcolor scrollertermsofuse" >
-            <table class="bgcolor" >
-               <tr>
-                 <td>
-                     
+        <div data-role="scroller" class="scrollertermsofuse txtwhite justify" >
                     <p>
                     These Terms of Use are effective on January 19, 2013. To access our previous Terms of Use<br>
 
@@ -42,19 +35,12 @@
 
 17. You must not attempt to restrict another user from using or enjoying the Service and you must not encourage or facilitate violations of these Terms of Use or any other Instagram terms.<br>
                      </p>
-
-
-                      
-                 </td>
-               </tr>
-            </table>
         </div>
            <div class="button-group" >
-                <a class="primary" data-role="button"   data-bind="events: { click: termsofuseViewModel.submit }">Agree</a>
+                <a class="primary" data-role="button"   data-bind="events: { click: termsofuseViewModel.submit }"><span class="spanbutton">Agree</span></a>
            </div>
-           <div class="button-group" >
-                <a  class="primary2"data-role="button" data-bind="events: { click: termsofuseViewModel.gohome }"  >Disagree</a>
+           <div class="button-group magintermsofuse" >
+                <a  class="primary2"data-role="button" data-bind="events: { click: termsofuseViewModel.gohome }"  ><span class="spanbutton">Cancel</span></a>
            </div>
         
-    </div>
 </div>

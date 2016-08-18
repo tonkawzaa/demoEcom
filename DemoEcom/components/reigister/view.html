@@ -1,62 +1,62 @@
 <div data-role="view" data-title="Home View" data-layout="main" data-model="app.reigisterView" data-show="app.reigisterView.onShow" data-after-show="app.reigisterView.afterShow">
-          <span class="h2 center reigister" >
-            Reigister
+          <span class="h2 center txtwhite spaceTermOfUse" >
+              <b>
+                   Reigister
+              </b>
           </span>
+        <img src="images/icon-register.png" class="reg_logo">
     <div id="signup1_form" data-role="validator" novalidate="novalidate">
             <form>
-                <table>
-                   <tr>
-                       <td>
-                            <p>
-                                Name
-                            </p>
-                        </td>
-                       <td>
-                          <input id="signupfirstname" name="signupfirstname" class="form_reg" data-bind="value: reigisterViewModel.fields.name"  type="text" placeholder="Name" required validationMessage="***">
+              <table class="from_table_signin_child  bgcolor"  >
+                 <tr>
+                     <td >
+                         <img src="images/icon-user-black.png" class="icon_in_from" > 
+                     </td>
+                     <td class="tdwidth" > 
+                         <input id="signupfirstname" name="signupfirstname" class="form_reg" data-bind="value: reigisterViewModel.fields.name"  type="text" placeholder="Name" required validationMessage="***">
                          <span class="k-invalid-msg" data-for="signupfirstname"></span>
-                       </td>
-                   </tr>
-                   <tr>
-                       <td>
-                            <p>
-                                E-Mail
-                            </p>
-                        </td>
-                       <td>
+                     </td>
+                 </tr>
+              </table>
+              <table class="from_table_signin_child  bgcolor"  >
+                 <tr>
+                     <td >
+                         <img src="images/icon-email.png" class="icon_in_from" > 
+                     </td>
+                     <td class="tdwidth" > 
                           <input id="signupemail" name="signupemail"  class="form_reg" data-bind="value: reigisterViewModel.fields.email" required validationMessage="***" placeholder="E-mail" type="email">
                            <span class="k-invalid-msg" data-for="signupemail"></span>
-                       </td>
-                   </tr>
-                   <tr>
-                       <td>
-                            <p>
-                                Password
-                            </p>
-                        </td>
-                       <td>
+                     </td>
+                 </tr>
+              </table>
+              <table class="from_table_signin_child  bgcolor"  >
+                 <tr>
+                     <td >
+                         <img src="images/icon-password.png" class="icon_in_from" > 
+                     </td>
+                     <td class="tdwidth" > 
                           <input id="signuppassword1" name="signuppassword1"  class="form_reg" data-bind="value: reigisterViewModel.fields.password" required validationMessage="***" placeholder="Password" type="password">
                           <span class="k-invalid-msg" data-for="signuppassword1"></span>
-                       </td>
-                   </tr>
-                   <tr>
-                       <td>
-                            <p>
-                                Re-Password
-                            </p>
-                        </td>
-                       <td>
+                     </td>
+                 </tr>
+              </table>
+              <table class="from_table_signin_child  bgcolor"  >
+                 <tr>
+                     <td >
+                         <img src="images/icon-password.png" class="icon_in_from" > 
+                     </td>
+                     <td class="tdwidth" > 
                           <input id="signupconfirmpassword" name="signupconfirmpassword"  class="form_reg" data-bind="value: reigisterViewModel.fields.password_confirmation" required validationMessage="***" placeholder="Re-Password" type="password">
                           <span class="k-invalid-msg" data-for="signupconfirmpassword"></span>
-                       </td>
-                   </tr>
-                  
-                </table>
+                     </td>
+                 </tr>
+              </table>
             </form>
-               <div class="button-group" >
-                <a class="primary" data-role="button" data-bind="events: { click: reigisterViewModel.submit }" >Submit</a>
+               <div class="button-group maginregister" >
+                <a class="primary" data-role="button" data-bind="events: { click: reigisterViewModel.submit }" ><span class="spanbutton">Submit</span></a>
                </div>
-               <div class="button-group ">
-                <a  class="primary2"data-role="button" data-bind="events: { click: reigisterViewModel.gohome }"  >Cancel</a>
+               <div class="button-group magintermsofuse ">
+                <a  class="primary2"data-role="button" data-bind="events: { click: reigisterViewModel.gohome }"  ><span class="spanbutton">Cancel</span></a>
                </div>
               
                    

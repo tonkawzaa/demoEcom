@@ -1,17 +1,27 @@
 <div data-role="view" data-title="Home View" data-layout="main" data-model="app.homeView" data-show="app.homeView.onShow" data-after-show="app.homeView.afterShow">
     <!-- START_CUSTOM_CODE_homeView -->
     <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
-        <h1 class="center home" data-bind="html: title"></h1>
+        <!-- <h1 class="center home" data-bind="html: title"></h1>  -->
+    
+    <img src="images/logo-feedjoey.png" class="logo">
          <div class="center"  id="homeViewModel" data-role="validator" novalidate="novalidate" >
             <form>
-             <table class="tdwidth"  >
+             <table class="from_table_signin_child  bgcolor"  >
                  <tr>
+                     <td >
+                         <img src="images/icon-email.png" class="icon_in_from" > 
+                     </td>
                      <td class="tdwidth" > 
                          <input id="signinemail" name="signinemail" data-bind="value: homeViewModel.fields.email"  required validationMessage="***" placeholder="E-mail" type="email">
                          <span class="k-invalid-msg" data-for="signinemail"></span>
                      </td>
                  </tr>
+              </table>
+              <table class="from_table_signin_child bgcolor"   >
                  <tr>
+                     <td >
+                         <img src="images/icon-password.png" class="icon_in_from" > 
+                     </td>
                      <td class="tdwidth">
                          <input  id="signinpassword" name="signinpassword"  data-bind="value: homeViewModel.fields.password" required validationMessage="***" placeholder="Password" type="password">
                           <span class="k-invalid-msg" data-for="signinpassword"></span>
@@ -19,30 +29,28 @@
                  </tr>
              </table>
             </form>
-             <div class="button-group center" style="width: 60%;" >
-                <a  class="primary" data-role="button" data-transition="slide" data-bind="events: { click: homeViewModel.submit }">Login</a>
+             <div class="button-group center from_table_signin_child magin_buton" >
+                <a  class="primary wbutton" data-role="button" data-transition="slide" data-bind="events: { click: homeViewModel.submit }"><span class="spanbutton"> Login</span></a>
              </div>
-              <table class=" from_center " >
-                 <tr>
-                     <td>
-                         <span  data-bind="events: { click: homeViewModel.gotermofuse }" >
-                             Create an account
-                         </span>
-                     </td>
-                  </tr>
-                  <!--
-                  <tr>
-                     <td >
-                         <a  onclick="window.open('https://greencard.deqp.go.th/web/reset_password', 'newwindow'); return false; ">
-                             <span>
-                                 Forgot password
-                             </span>
-                         </a>
-                     </td>
-                   
-                 </tr>
-                  -->
-             </table>
+              <div class="from_table_signin_child ">
+                          <span  data-bind="events: { click: homeViewModel.gotermofuse }" class="txtyellow right" >
+                                 <i>Create an account</i>
+                          </span>     
+              </div>
+             <table class="gap_bottom_hight">
+                     <tr>
+                         <td >
+                         </td>
+                     </tr>
+                 </table>
+             <div class="background_image_main_bottom" >
+                 <table class="main_bottom_hight">
+                     <tr>
+                         <td >
+                         </td>
+                     </tr>
+                 </table>
+             </div>
         </div>
     
     <!-- END_CUSTOM_CODE_homeView -->
